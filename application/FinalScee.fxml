@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" styleClass="stack-pane" stylesheets="@stylefinal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <GridPane layoutX="380.0" layoutY="225.0" stylesheets="@stylefinal.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="261.6000122070312" minHeight="10.0" prefHeight="197.39998779296874" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="393.4000244140625" minHeight="10.0" prefHeight="342.20001220703125" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="551.0" fitWidth="465.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../trophy/Nanu%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="333.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../trophy/Nanu%20(3).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="329.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../trophy/Nanu%20(4).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="firstPlace" text="Player" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" top="50.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="secondPlace" prefHeight="66.0" prefWidth="269.0" text="Player" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="215.0" top="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="thirdPlace" prefHeight="66.0" prefWidth="222.0" text="Player" textFill="WHITE" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets left="45.0" right="85.0" top="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="44.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#exitGame" prefHeight="46.0" prefWidth="103.0" style="-fx-border-color: #FFE195; -fx-background-color: #FDDE4C;" text="Exit" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="350.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

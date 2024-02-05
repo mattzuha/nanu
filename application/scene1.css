@@ -1,0 +1,23 @@
+/* styles.css */
+
+.abc {
+  -fx-background-image: url('final.png');
+  -fx-background-size: cover;
+  -fx-background-position: center;
+  -fx-transform-origin: center center; /* Đặt trung tâm làm gốc */
+  -fx-transform: scale(1, 1); /* Tỉ lệ zoom ban đầu (1 là 100%) */
+  -fx-transition: transform 0.5s; /* Thời gian chuyển đổi */
+}
+
+.aaa {
+  -fx-background-image: url('win.png');
+  -fx-background-size: cover;
+  -fx-background-position: center;
+  -fx-transform-origin: center center; /* Đặt trung tâm làm gốc */
+  -fx-transform: scale(1, 1); /* Tỉ lệ zoom ban đầu (1 là 100%) */
+  -fx-transition: transform 0.5s; /* Thời gian chuyển đổi */
+}
+.ddd {
+  -fx-layout-x: 50%;
+  -fx-layout-y: 50%;
+}

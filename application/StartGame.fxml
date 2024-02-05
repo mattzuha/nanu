@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" styleClass="abc" stylesheets="@scene1.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <GridPane layoutX="187.0" layoutY="155.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints minWidth="10.0" prefWidth="150.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="53.79999389648438" minHeight="10.0" prefHeight="53.79999389648438" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="171.9999877929687" minHeight="10.0" prefHeight="171.9999877929687" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="171.9999877929687" minHeight="10.0" prefHeight="108.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="105.60000000000002" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="53.60001220703123" minHeight="0.0" prefHeight="0.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="123.00003662109378" minHeight="10.0" prefHeight="112.60001220703128" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#switchToMainScene" style="-fx-border-color: #FF6D6D; -fx-background-color: #FFE195;" styleClass="button1" stylesheets="@scene1.css" text="Start" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="TOP">
+               <effect>
+                  <SepiaTone />
+               </effect></Button>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#switchScene2" style="-fx-border-color: #FF6D6D; -fx-background-color: #FFE195;" stylesheets="@scene1.css" text="How to play" textAlignment="CENTER" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+               <effect>
+                  <SepiaTone />
+               </effect></Button>
+            <ChoiceBox fx:id="choiceBox1" prefWidth="150.0" style="-fx-border-color: #FF6D6D; -fx-background-color: #FFE195;" styleClass="button1" stylesheets="@scene1.css" value="3 Players" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <SepiaTone />
+               </effect></ChoiceBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
